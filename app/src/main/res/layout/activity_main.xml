@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout = "@layout/view_doodlview"/>
+
+
+
+    <Button
+        android:id="@+id/Pencil"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/draw"
+        android:onClick="pencil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Red"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/red"
+        android:onClick="redColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Yellow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/yellow"
+        android:onClick="yellowColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Blue"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginStart="212dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/blue"
+        android:onClick="blueColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/ClearSketch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#018685"
+        android:onClick="eraser"
+        android:text="@string/clear"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_700"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
